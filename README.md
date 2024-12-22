@@ -53,3 +53,38 @@ Make sure you have the following installed on your machine:
    ```bash
    git clone https://github.com/yourusername/registration-form.git
    cd registration-form
+
+2.Navigate to the frontend directory and install dependencies:
+- cd frontend
+- npm install
+
+3.Navigate to the backend directory and install dependencies:
+- cd ../backend
+- npm install
+
+### Running the Application
+- cd backend
+- npm start
+- The server will run on http://localhost:5000 (or the port you specified)
+2.Start the frontend application:
+- cd ../frontend
+- npm run dev
+-pen your browser and navigate to http://localhost:3200 to view the registration form.
+
+### API Endpoints
+POST /api/register
+Description: Register a new user.
+Request Body:
+json
+
+### Middleware
+The backend uses middleware for:
+
+Body Parsing: To parse incoming request bodies in a middleware before your handlers, available under the req.body property.
+Error Handling: To catch and handle errors gracefully.
+
+
+### License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+You can copy and paste this content directly into your README.md file. Make sure to replace `https://github.com/yourusername/registration-form.git` with the actual URL of your repository. Adjust any other details as necessary to fit your project.
