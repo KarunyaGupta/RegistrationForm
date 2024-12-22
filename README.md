@@ -86,5 +86,3 @@ Error Handling: To catch and handle errors gracefully.
 
 ### License
 This project is licensed under the MIT License. See the LICENSE file for details.
-
-You can copy and paste this content directly into your README.md file. Make sure to replace `https://github.com/yourusername/registration-form.git` with the actual URL of your repository. Adjust any other details as necessary to fit your project.
