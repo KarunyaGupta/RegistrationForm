@@ -1,88 +1,114 @@
-# Registration Form
+# Simple Backend Application
 
-This project is a simple registration form built with React (using Vite) for the frontend and Express for the backend. It allows users to register by providing their details, which are then sent to the server for processing.
+## Project Description
+This project is designed to allow user registration and display registered users in a table format. It includes the following components:
 
-## Table of Contents
+- **Backend:** Handles API endpoints for user registration and retrieval.
+- **React Frontend:** User interaction using React and Vite.
 
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
-- [API Endpoints](#api-endpoints)
-- [Middleware](#middleware)
-- [CORS Configuration](#cors-configuration)
-- [Contributing](#contributing)
-- [License](#license)
+## Folder Structure
 
-## Features
+```
+backend-project
+|-- backend
+|   |-- (Backend server files)
+|
+|-- react_frontend
+|   |-- (React + Vite frontend files)
+```
 
-- User registration with validation
-- Responsive design
-- Simple and clean UI
-- Backend API to handle registration requests
-- CORS enabled for cross-origin requests
-
-## Technologies Used
-
-- **Frontend:**
-  - React
-  - Vite
-  - Axios (for making HTTP requests)
-
-- **Backend:**
-  - Node.js
-  - Express
-  - CORS
-  - Middleware for request handling
+---
 
 ## Getting Started
 
+Follow the steps below to clone the project, install dependencies, and run the application.
+
 ### Prerequisites
 
-Make sure you have the following installed on your machine:
+Ensure you have the following installed:
+- [Node.js](https://nodejs.org/) (v16 or above)
+- [npm](https://www.npmjs.com/) for dependency management
+- [Git](https://git-scm.com/) for cloning the repository
 
-- Node.js (v14 or later)
-- npm (Node Package Manager)
+---
 
-### Installation
+## Steps to Run the Project
 
-1. Clone the repository:
+### 1. Clone the Repository
 
-   ```bash
-   git clone https://github.com/yourusername/registration-form.git
-   cd registration-form
+Execute this command in your terminal to clone the project:
+```bash
+git clone https://github.com/KarunyaGupta/RegistrationForm.git
+```
 
-2.Navigate to the frontend directory and install dependencies:
-- cd frontend
-- npm install
+Navigate to the project directory:
+```bash
+cd backend-project
+```
 
-3.Navigate to the backend directory and install dependencies:
-- cd ../backend
-- npm install
+### 2. Setup Backend
 
-### Running the Application
-- cd backend
-- npm start
-- The server will run on http://localhost:5000 (or the port you specified)
-2.Start the frontend application:
-- cd ../frontend
-- npm run dev
--pen your browser and navigate to http://localhost:3200 to view the registration form.
+Navigate to the `backend` folder:
+```bash
+cd backend
+```
 
-### API Endpoints
-POST /api/register
-Description: Register a new user.
-Request Body:
-json
+Install dependencies:
+```bash
+npm install
+```
 
-### Middleware
-The backend uses middleware for:
+Run the backend server:
+```bash
+node index.js
+```
+The server will run on `http://localhost:3000` (default port).
 
-Body Parsing: To parse incoming request bodies in a middleware before your handlers, available under the req.body property.
-Error Handling: To catch and handle errors gracefully.
+---
 
+### 3. Setup React Frontend
 
-### License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Navigate to the `react_frontend` folder:
+```bash
+cd ../react_frontend
+```
+
+Install dependencies:
+```bash
+npm install
+```
+
+Run the React frontend:
+```bash
+npm run dev
+```
+The application will be available at `http://localhost:5173` (or the port specified by Vite).
+You can enhance the styling of the React pages using the `App.css` file located in the `src` folder.
+
+---
+
+## Features
+
+1. **User Registration:**
+   - Register users by providing their name, username, and password.
+2. **Display Users:**
+   - View all registered users in a table format on the frontend.
+
+---
+
+## API Endpoints
+
+### Backend API
+
+- **POST /send-data**: Register a new user
+  ```json
+  {
+    "name": "string",
+    "username": "string",
+    "password": "string"
+  }
+  ```
+
+- **GET /get-data**: Retrieve the list of all registered users
+
+---
