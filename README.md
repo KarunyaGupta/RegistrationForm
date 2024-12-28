@@ -10,10 +10,10 @@ This project is designed to allow user registration and display registered users
 
 ```
 backend-project
-|-- backend
+|-- Backend
 |   |-- (Backend server files)
 |
-|-- react_frontend
+|-- Frontend
 |   |-- (React + Vite frontend files)
 ```
 
@@ -43,7 +43,7 @@ git clone https://github.com/KarunyaGupta/RegistrationForm.git
 
 Navigate to the project directory:
 ```bash
-cd backend-project
+cd RegistrationFrom
 ```
 
 ### 2. Setup Backend
@@ -68,9 +68,9 @@ The server will run on `http://localhost:3000` (default port).
 
 ### 3. Setup React Frontend
 
-Navigate to the `react_frontend` folder:
+Navigate to the `frontend` folder:
 ```bash
-cd ../react_frontend
+cd ../frontend
 ```
 
 Install dependencies:
